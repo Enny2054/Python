@@ -4,14 +4,15 @@
 # Mostre o salário antigo, o novo salário e a diferença.
 
 def aumento_salarial(salario, cargo):
-  if cargo == "gerente" or "Gerente":
+  if cargo == "gerente" or "Gerente" or 101:
     aumento = 0.1
-  elif cargo == "engenheiro" or "Engenheiro":
+  elif cargo == "engenheiro" or "Engenheiro" or 102:
     aumento =  0.2
-  elif cargo == "técnico" or "Técnico" or "Tecnico" or "tecnico":
+  elif cargo == "técnico" or "Técnico" or "Tecnico" or "tecnico" or 103:
     aumento = 0.3
   else:
    aumento = 0.4
+    
   novo_salario = salario * (1 + aumento)
   return novo_salario
 
